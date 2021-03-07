@@ -28,7 +28,7 @@ class GiveMeAColor:
         bColor = random.randint(0, 255)
         hexCode = '{:02x}{:02x}{:02x}'.format(rColor, gColor, bColor).upper()
         color = {
-            "HEX": hexCode,
+            "HEX": "#"+hexCode,
             "RGB": f'rgb{rColor,gColor,bColor}',
             "RGBA": f'rgb{rColor,gColor,bColor,1}'
         }

@@ -5,7 +5,7 @@ app = Flask(__name__)
 randomColor = GiveMeAColor()
 
 
-@app.route("/")
+@app.route("/" ,methods=['GET'])
 def hello():
     return jsonify({"data": "tiqdev random_color_api"})
 

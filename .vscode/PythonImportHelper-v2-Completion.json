@@ -1,0 +1,107 @@
+[
+    {
+        "label": "GiveMeAColor",
+        "importPath": "color",
+        "description": "color",
+        "isExtraImport": true,
+        "detail": "color",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def hello():\n    return jsonify({\"data\": \"tiqdev random_color_api\"})\n@app.route(\"/random\", methods=['GET'])\ndef generateColor():\n    result = randomColor.generateColor()\n    return result, 200\n@app.route(\"/randomRGB\", methods=['GET'])\ndef generateRGB():\n    result = randomColor.randomRGB()\n    return jsonify({\"RGB\": result}), 200",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "generateColor",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def generateColor():\n    result = randomColor.generateColor()\n    return result, 200\n@app.route(\"/randomRGB\", methods=['GET'])\ndef generateRGB():\n    result = randomColor.randomRGB()\n    return jsonify({\"RGB\": result}), 200\n@app.route(\"/randomHEX\", methods=['GET'])\ndef generateHEX():\n    result = randomColor.randomHex()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "generateRGB",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def generateRGB():\n    result = randomColor.randomRGB()\n    return jsonify({\"RGB\": result}), 200\n@app.route(\"/randomHEX\", methods=['GET'])\ndef generateHEX():\n    result = randomColor.randomHex()\n    return jsonify({\"HEX\": result}), 200\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "generateHEX",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def generateHEX():\n    result = randomColor.randomHex()\n    return jsonify({\"HEX\": result}), 200\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\nrandomColor = GiveMeAColor()\n@app.route(\"/\" ,methods=['GET'])\ndef hello():\n    return jsonify({\"data\": \"tiqdev random_color_api\"})\n@app.route(\"/random\", methods=['GET'])\ndef generateColor():\n    result = randomColor.generateColor()\n    return result, 200\n@app.route(\"/randomRGB\", methods=['GET'])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "randomColor",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "randomColor = GiveMeAColor()\n@app.route(\"/\" ,methods=['GET'])\ndef hello():\n    return jsonify({\"data\": \"tiqdev random_color_api\"})\n@app.route(\"/random\", methods=['GET'])\ndef generateColor():\n    result = randomColor.generateColor()\n    return result, 200\n@app.route(\"/randomRGB\", methods=['GET'])\ndef generateRGB():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "GiveMeAColor",
+        "kind": 6,
+        "importPath": "color",
+        "description": "color",
+        "peekOfCode": "class GiveMeAColor:\n    # create random color rgb code\n    def randomRGB(self):\n        rColor = random.randint(0, 255)\n        gColor = random.randint(0, 255)\n        bColor = random.randint(0, 255)\n        response = f'rgb{rColor,gColor,bColor}'\n        return response\n    # create random color HEX code\n    def randomHex(self):",
+        "detail": "color",
+        "documentation": {}
+    }
+]

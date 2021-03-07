@@ -7,7 +7,7 @@ randomColor = GiveMeAColor()
 
 @app.route("/")
 def hello():
-    return jsonify({"data": "tiqdesign random_color_api"})
+    return jsonify({"data": "tiqdev random_color_api"})
 
 
 @app.route("/random", methods=['GET'])
